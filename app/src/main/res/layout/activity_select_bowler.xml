@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryColor"
+        tools:context=".SelectBowler">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintEnd"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:background="@color/black"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:weightSum="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Select Bowler"
+                    android:gravity="center"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/relativeLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/textView1"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignParentBottom="true">
+
+                        <CheckBox
+                            android:id="@+id/bowller1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/runnerone"
+                            android:button="@null"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <CheckBox
+                            android:id="@+id/bowller3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="40dp"
+                            android:background="@drawable/runnerthree"
+                            android:button="@null"
+                            android:clickable="true"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/bowller1" />
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/relativeLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/textView1"
+
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignParentBottom="true">
+                        <CheckBox
+                            android:id="@+id/bowller2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/runner_two"
+                            android:button="@null"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:id="@+id/bowller4"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_below="@id/bowller2"
+                            android:background="@drawable/runnerfour"
+                            android:button="@null"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/bowller2"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/primaryColor"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:text="Next"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Select Level"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/textView2"
+                    android:layout_alignTop="@id/relativeLayout1"
+                    android:layout_alignRight="@id/textView2"
+                    android:layout_marginTop="44.0dip">
+
+                    <RadioButton
+                        android:id="@+id/radio0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Practice  "
+                        android:textColor="#ffffff"
+                        android:textSize="30.0sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20.0dip"
+                        android:layout_weight="2.0"
+                        android:text="Mature "
+                        android:textColor="#ffffff"
+                        android:textSize="30.0sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20.0dip"
+                        android:layout_weight="1.0"
+                        android:text="Pro"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

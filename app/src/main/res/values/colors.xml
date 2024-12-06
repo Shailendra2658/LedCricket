@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#ff0000</color>
+    <color name="primaryTextColor">#000000</color>
+
+        <color name="colorPrimary">#673dda</color>
+        <color name="colorPrimaryLight">#F9F7FE</color>
+        <color name="purple_200">#FFBB86FC</color>
+        <color name="purple_500">#FF6200EE</color>
+        <color name="purple_700">#FF3700B3</color>
+        <color name="teal_200">#FF03DAC5</color>
+        <color name="teal_700">#FF018786</color>
+        <color name="black">#FF000000</color>
+        <color name="white">#FFFFFFFF</color>
+        <color name="purple">#673dda</color>
+        <color name="transaction_failed_red">#D98383</color>
+        <color name="qr_tip_txt_color">#303030</color>
+        <color name="qr_tip_txt_click_color">#303030</color>
+        <color name="qr_tip_outline_purple">#cc673dda</color>
+        <color name="qr_tip__purple_back">#efebfb</color>
+        <color name="qr_amount_pinkish_red">#ed1c24</color>
+        <color name="darker_gray_rounded">#aaa</color>
+        <color name="min_amount_qr_txt">#333333</color>
+        <color name="dark_grey">#807f84</color>
+        <color name="disabled_color">#F8F8F8</color>
+        <color name="new_info_txt_color">#767676</color>
+
+        <color name="contact_bg1">#028c45</color>
+        <color name="contact_bg2">#f47920</color>
+        <color name="contact_bg3">#22a288</color>
+        <color name="contact_bg4">#673dda</color>
+        <color name="contact_bg5">#2c8adb</color>
+        <color name="contact_bg6">#c14a2e</color>
+        <string-array name="androidcolors_dark">
+            <item>@color/contact_bg1</item>
+            <item>@color/contact_bg2</item>
+            <item>@color/contact_bg3</item>
+            <item>@color/contact_bg4</item>
+            <item>@color/contact_bg5</item>
+            <item>@color/contact_bg6</item>
+        </string-array>
+        <color name="bg_txt_color_black">#303030</color>
+        <color name="color_text">#979797</color>
+        <color name="color_edit_text_hint">#757575</color>
+        <color name="textColorSecondary">#AAAAAA</color>
+        <color name="text_light">#767676</color>
+        <color name="color_dim_back">#99000000</color>
+        <color name="color_dim_start">#30000000</color>
+        <color name="colorInlineError">#dc2c39</color>
+        <color name="hint_color">#b1b1b1</color>
+        <color name="black_color">#000000</color>
+        <color name="blue">#5690CC</color>
+        <color name="colorAccountRow">#efebfb</color>
+        <color name="stroke_color">#DBDBDB</color>
+        <color name="red">#ED1C24</color>
+        <color name="color_kycBlue">#673DDA</color>
+        <color name="text_grey">#808080</color>
+        <color name="item_stroke">#D9DBDE</color>
+        <color name="dash_bottom">#F6F3FD</color>
+        <color name="translucentColor">#60000000</color>
+        <color name="wibmo_blue">#00337f</color>
+        <color name="histroy_date">#F7F7FC</color>
+
+        <color name="detail_grey">#F7F7FC</color>
+
+
+        <color name="green_text">#28A745</color>
+        <color name="text_pending">#e2a63b</color>
+</resources>

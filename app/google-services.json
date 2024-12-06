@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "796163669606",
+    "project_id": "tvapp-81e31",
+    "storage_bucket": "tvapp-81e31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796163669606:android:c25ea2c15ac196882c37a7",
+        "android_client_info": {
+          "package_name": "com.shaily.notifapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796163669606-d6ilqjcms543pvb3q00d6i79la0fa2tr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs4yuxTHh8qOhS7BQeUpBopkgMQsUu4e0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796163669606-d6ilqjcms543pvb3q00d6i79la0fa2tr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

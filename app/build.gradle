@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    namespace 'com.shaily.notifapp'
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.shaily.notifapp"
+        minSdk 21
+        targetSdk 32
+        versionCode 16
+        versionName "1.16"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures {
+
+        dataBinding = true
+
+        // for view binding:
+        // viewBinding = true
+    }
+
+    buildTypes {
+        debug{
+            ext.enableCrashlytics = true
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "Tv-${variant.name}-${variant.versionName}.apk"
+                }
+            }
+        }
+        release {
+            minifyEnabled false
+            ext.enableCrashlytics = true
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "Tv-${variant.name}-${variant.versionName}.apk"
+                }
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-bom:31.2.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.2.9'
+    implementation 'com.google.firebase:firebase-analytics:20.1.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
